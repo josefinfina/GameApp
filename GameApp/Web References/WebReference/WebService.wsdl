@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="ForeignKeys" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="ForeignKeys" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="ForeignKeys">
+      <s:element name="FindHighscoreList">
+        <s:complexType />
+      </s:element>
+      <s:element name="FindHighscoreListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindHighscoreListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindEmployee">
+        <s:complexType />
+      </s:element>
+      <s:element name="FindEmployeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindEmployeeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindEmployeeRelative">
+        <s:complexType />
+      </s:element>
+      <s:element name="FindEmployeeRelativeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindEmployeeRelativeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindAllKeys">
+        <s:complexType />
+      </s:element>
+      <s:element name="FindAllKeysResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindAllKeysResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindSickestEmployee">
+        <s:complexType />
+      </s:element>
+      <s:element name="FindSickestEmployeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindSickestEmployeeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindSickEmployeesYear">
+        <s:complexType />
+      </s:element>
+      <s:element name="FindSickEmployeesYearResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindSickEmployeesYearResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindAllIndexes">
+        <s:complexType />
+      </s:element>
+      <s:element name="FindAllIndexesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindAllIndexesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindAllTableConstraints">
+        <s:complexType />
+      </s:element>
+      <s:element name="FindAllTableConstraintsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindAllTableConstraintsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindAllTables">
+        <s:complexType />
+      </s:element>
+      <s:element name="FindAllTablesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindAllTablesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindAllTablesTwo">
+        <s:complexType />
+      </s:element>
+      <s:element name="FindAllTablesTwoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindAllTablesTwoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindAllColumnsEmployee">
+        <s:complexType />
+      </s:element>
+      <s:element name="FindAllColumnsEmployeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindAllColumnsEmployeeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindAllColumnsEmployeeTwo">
+        <s:complexType />
+      </s:element>
+      <s:element name="FindAllColumnsEmployeeTwoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindAllColumnsEmployeeTwoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="txtFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="filename" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="txtFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="txtFileResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="FindHighscoreListSoapIn">
+    <wsdl:part name="parameters" element="tns:FindHighscoreList" />
+  </wsdl:message>
+  <wsdl:message name="FindHighscoreListSoapOut">
+    <wsdl:part name="parameters" element="tns:FindHighscoreListResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindEmployeeSoapIn">
+    <wsdl:part name="parameters" element="tns:FindEmployee" />
+  </wsdl:message>
+  <wsdl:message name="FindEmployeeSoapOut">
+    <wsdl:part name="parameters" element="tns:FindEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindEmployeeRelativeSoapIn">
+    <wsdl:part name="parameters" element="tns:FindEmployeeRelative" />
+  </wsdl:message>
+  <wsdl:message name="FindEmployeeRelativeSoapOut">
+    <wsdl:part name="parameters" element="tns:FindEmployeeRelativeResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindAllKeysSoapIn">
+    <wsdl:part name="parameters" element="tns:FindAllKeys" />
+  </wsdl:message>
+  <wsdl:message name="FindAllKeysSoapOut">
+    <wsdl:part name="parameters" element="tns:FindAllKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindSickestEmployeeSoapIn">
+    <wsdl:part name="parameters" element="tns:FindSickestEmployee" />
+  </wsdl:message>
+  <wsdl:message name="FindSickestEmployeeSoapOut">
+    <wsdl:part name="parameters" element="tns:FindSickestEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindSickEmployeesYearSoapIn">
+    <wsdl:part name="parameters" element="tns:FindSickEmployeesYear" />
+  </wsdl:message>
+  <wsdl:message name="FindSickEmployeesYearSoapOut">
+    <wsdl:part name="parameters" element="tns:FindSickEmployeesYearResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindAllIndexesSoapIn">
+    <wsdl:part name="parameters" element="tns:FindAllIndexes" />
+  </wsdl:message>
+  <wsdl:message name="FindAllIndexesSoapOut">
+    <wsdl:part name="parameters" element="tns:FindAllIndexesResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindAllTableConstraintsSoapIn">
+    <wsdl:part name="parameters" element="tns:FindAllTableConstraints" />
+  </wsdl:message>
+  <wsdl:message name="FindAllTableConstraintsSoapOut">
+    <wsdl:part name="parameters" element="tns:FindAllTableConstraintsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindAllTablesSoapIn">
+    <wsdl:part name="parameters" element="tns:FindAllTables" />
+  </wsdl:message>
+  <wsdl:message name="FindAllTablesSoapOut">
+    <wsdl:part name="parameters" element="tns:FindAllTablesResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindAllTablesTwoSoapIn">
+    <wsdl:part name="parameters" element="tns:FindAllTablesTwo" />
+  </wsdl:message>
+  <wsdl:message name="FindAllTablesTwoSoapOut">
+    <wsdl:part name="parameters" element="tns:FindAllTablesTwoResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindAllColumnsEmployeeSoapIn">
+    <wsdl:part name="parameters" element="tns:FindAllColumnsEmployee" />
+  </wsdl:message>
+  <wsdl:message name="FindAllColumnsEmployeeSoapOut">
+    <wsdl:part name="parameters" element="tns:FindAllColumnsEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindAllColumnsEmployeeTwoSoapIn">
+    <wsdl:part name="parameters" element="tns:FindAllColumnsEmployeeTwo" />
+  </wsdl:message>
+  <wsdl:message name="FindAllColumnsEmployeeTwoSoapOut">
+    <wsdl:part name="parameters" element="tns:FindAllColumnsEmployeeTwoResponse" />
+  </wsdl:message>
+  <wsdl:message name="txtFileSoapIn">
+    <wsdl:part name="parameters" element="tns:txtFile" />
+  </wsdl:message>
+  <wsdl:message name="txtFileSoapOut">
+    <wsdl:part name="parameters" element="tns:txtFileResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceSoap">
+    <wsdl:operation name="FindHighscoreList">
+      <wsdl:input message="tns:FindHighscoreListSoapIn" />
+      <wsdl:output message="tns:FindHighscoreListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindEmployee">
+      <wsdl:input message="tns:FindEmployeeSoapIn" />
+      <wsdl:output message="tns:FindEmployeeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindEmployeeRelative">
+      <wsdl:input message="tns:FindEmployeeRelativeSoapIn" />
+      <wsdl:output message="tns:FindEmployeeRelativeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindAllKeys">
+      <wsdl:input message="tns:FindAllKeysSoapIn" />
+      <wsdl:output message="tns:FindAllKeysSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindSickestEmployee">
+      <wsdl:input message="tns:FindSickestEmployeeSoapIn" />
+      <wsdl:output message="tns:FindSickestEmployeeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindSickEmployeesYear">
+      <wsdl:input message="tns:FindSickEmployeesYearSoapIn" />
+      <wsdl:output message="tns:FindSickEmployeesYearSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindAllIndexes">
+      <wsdl:input message="tns:FindAllIndexesSoapIn" />
+      <wsdl:output message="tns:FindAllIndexesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindAllTableConstraints">
+      <wsdl:input message="tns:FindAllTableConstraintsSoapIn" />
+      <wsdl:output message="tns:FindAllTableConstraintsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindAllTables">
+      <wsdl:input message="tns:FindAllTablesSoapIn" />
+      <wsdl:output message="tns:FindAllTablesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindAllTablesTwo">
+      <wsdl:input message="tns:FindAllTablesTwoSoapIn" />
+      <wsdl:output message="tns:FindAllTablesTwoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindAllColumnsEmployee">
+      <wsdl:input message="tns:FindAllColumnsEmployeeSoapIn" />
+      <wsdl:output message="tns:FindAllColumnsEmployeeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindAllColumnsEmployeeTwo">
+      <wsdl:input message="tns:FindAllColumnsEmployeeTwoSoapIn" />
+      <wsdl:output message="tns:FindAllColumnsEmployeeTwoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="txtFile">
+      <wsdl:input message="tns:txtFileSoapIn" />
+      <wsdl:output message="tns:txtFileSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceSoap" type="tns:WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="FindHighscoreList">
+      <soap:operation soapAction="ForeignKeys/FindHighscoreList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindEmployee">
+      <soap:operation soapAction="ForeignKeys/FindEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindEmployeeRelative">
+      <soap:operation soapAction="ForeignKeys/FindEmployeeRelative" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllKeys">
+      <soap:operation soapAction="ForeignKeys/FindAllKeys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindSickestEmployee">
+      <soap:operation soapAction="ForeignKeys/FindSickestEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindSickEmployeesYear">
+      <soap:operation soapAction="ForeignKeys/FindSickEmployeesYear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllIndexes">
+      <soap:operation soapAction="ForeignKeys/FindAllIndexes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllTableConstraints">
+      <soap:operation soapAction="ForeignKeys/FindAllTableConstraints" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllTables">
+      <soap:operation soapAction="ForeignKeys/FindAllTables" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllTablesTwo">
+      <soap:operation soapAction="ForeignKeys/FindAllTablesTwo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllColumnsEmployee">
+      <soap:operation soapAction="ForeignKeys/FindAllColumnsEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllColumnsEmployeeTwo">
+      <soap:operation soapAction="ForeignKeys/FindAllColumnsEmployeeTwo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="txtFile">
+      <soap:operation soapAction="ForeignKeys/txtFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceSoap12" type="tns:WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="FindHighscoreList">
+      <soap12:operation soapAction="ForeignKeys/FindHighscoreList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindEmployee">
+      <soap12:operation soapAction="ForeignKeys/FindEmployee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindEmployeeRelative">
+      <soap12:operation soapAction="ForeignKeys/FindEmployeeRelative" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllKeys">
+      <soap12:operation soapAction="ForeignKeys/FindAllKeys" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindSickestEmployee">
+      <soap12:operation soapAction="ForeignKeys/FindSickestEmployee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindSickEmployeesYear">
+      <soap12:operation soapAction="ForeignKeys/FindSickEmployeesYear" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllIndexes">
+      <soap12:operation soapAction="ForeignKeys/FindAllIndexes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllTableConstraints">
+      <soap12:operation soapAction="ForeignKeys/FindAllTableConstraints" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllTables">
+      <soap12:operation soapAction="ForeignKeys/FindAllTables" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllTablesTwo">
+      <soap12:operation soapAction="ForeignKeys/FindAllTablesTwo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllColumnsEmployee">
+      <soap12:operation soapAction="ForeignKeys/FindAllColumnsEmployee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindAllColumnsEmployeeTwo">
+      <soap12:operation soapAction="ForeignKeys/FindAllColumnsEmployeeTwo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="txtFile">
+      <soap12:operation soapAction="ForeignKeys/txtFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService">
+    <wsdl:port name="WebServiceSoap" binding="tns:WebServiceSoap">
+      <soap:address location="http://localhost:53428/WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceSoap12" binding="tns:WebServiceSoap12">
+      <soap12:address location="http://localhost:53428/WebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

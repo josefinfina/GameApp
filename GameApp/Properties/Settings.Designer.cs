@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GameApp.Properties {
+namespace GameQuiz.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -25,11 +25,11 @@ namespace GameApp.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-KMIM16D;Initial Catalog=GameDB;Integrated Security=True")]
-        public string DbConnection {
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:53428/WebService.asmx")]
+        public string GameQuiz_WebReference_WebService {
             get {
-                return ((string)(this["DbConnection"]));
+                return ((string)(this["GameQuiz_WebReference_WebService"]));
             }
         }
     }
